@@ -63,6 +63,9 @@ typedef struct {
 #if defined(VK_USE_PLATFORM_VI_NN)
         VkIcdSurfaceVi vi_surf;
 #endif  // VK_USE_PLATFORM_VI_NN
+#if defined(VK_USE_PLATFORM_OHOS)
+        VkIcdSurfaceOHOS ohos_surf;
+#endif  // VK_USE_PLATFORM_OHOS
         VkIcdSurfaceDisplay display_surf;
         VkIcdSurfaceHeadless headless_surf;
     };
